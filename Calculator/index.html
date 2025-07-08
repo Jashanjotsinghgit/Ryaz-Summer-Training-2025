@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <main>
+      <h2 id="heading">Let's Calculate</h2>
+      <div class="board">
+        <input type="text" id="board__input" />
+        <div class="grid--4x5 board__btn__container">
+          <button class="board__btn sp__btn">C</button
+          ><button class="board__btn sp__btn" value="%">%</button
+          ><button class="board__btn sp__btn" value="del"><i class="fa-solid fa-delete-left" ></i></button
+          ><button class="board__btn sp__btn" value="/"><i class="fa-solid fa-divide"></i></button 
+          ><button class="board__btn">7</button
+          ><button class="board__btn">8</button
+          ><button class="board__btn">9</button
+          ><button class="board__btn sp__btn" value="x"><i class="fa-solid fa-multiply"></i></button
+          ><button class="board__btn">4</button
+          ><button class="board__btn">5</button
+          ><button class="board__btn">6</button
+          ><button class="board__btn sp__btn" value="-"><i class="fa-solid fa-subtract"></i></button
+          ><button class="board__btn">1</button
+          ><button class="board__btn">2</button
+          ><button class="board__btn">3</button
+          ><button class="board__btn sp__btn" value="+"><i class="fa-solid fa-add"></i></button
+          ><button class="board__btn">00</button
+          ><button class="board__btn">0</button
+          ><button class="board__btn">.</button
+          ><button class="board__btn sp__btn" value="="><i class="fa-solid fa-equals"></i></button>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
