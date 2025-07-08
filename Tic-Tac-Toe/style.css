@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  color: #003049;
+  background-color: #fdf0d5;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 5rem;
+}
+.game {
+  background-color: #c1121f;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  min-width: 40rem;
+}
+.box {
+  color: #c1121f;
+  background-color: #edf2f4;
+  width: 32%;
+  height: 32%;
+  font-size: 9rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  min-width: 10rem;
+  min-height: 10rem;
+}
+.content {
+  text-align: center;
+  height: 70%;
+  align-items: flex-start;
+}
+#heading {
+  font-size: 7rem;
+}
+.msg {
+  margin-top: 1rem;
+  display: none;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.msg span {
+  font-size: 2.5rem;
+}
+.content-btn {
+  cursor: pointer;
+  padding: 7px 0;
+  width: 18rem;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #c1121f;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        grid-template-columns: 1fr;
+        padding: 7rem;
+    }
+    .game{
+        width: 70vw;
+        height: 70vh;
+    }
+    .box{
+        width: 32%;
+        height: 32%;
+    }
+}
