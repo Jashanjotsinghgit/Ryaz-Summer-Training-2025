@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <main>
+     <!-- Side-Bar Section  -->
+      <section id="sideBar">
+        <h3 class="sideBar__heading">To-Do List</h3>
+        <ul class="list">
+          <li class="sideBar__btn" id="newTask" data-return="newTask"><i class="fa-regular fa-square-plus"></i>New Task</li>
+          <li class="sideBar__btn" data-return="pendingTask" ><i class="fa-regular fa-clock"></i>Pending</li>
+          <li class="sideBar__btn " data-return="completedTask" ><i class="fa-regular fa-square-check"></i>Completed</li>
+        </ul>
+      </section>
+
+      <!-- PendingTask Section -->
+      <section class=" right-section" id='pendingTask' >
+        <header>
+            <h2 class="right-section__header__heading">Today</h2>
+            <p class="right-section__header__text pendingTasks_length"> <i class="fa-regular fa-clock"></i>N tasks</p>
+        </header>
+        <h3 class="right-section__heading">My Tasks</h3>
+        <ul class="list right-section__list pendingTask__list">
+          <li class="listItem pendingTask__listItem">
+            <span>
+                <input type="checkbox" class="pendingTask__checkbox"/>
+                <h4 class="">Task Heading</h4>
+            </span>
+            <span>
+                <buttons class="listItem__btn doneBtn">Done</buttons>
+                <buttons class="listItem__btn deleteBtn">Delete</buttons>
+            </span>
+          </li>
+        </ul>
+
+      </section>
+
+      <!-- Completed Task Section -->
+      <section class=" right-section" id="completedTask" style="display: none;">
+        <header>
+            <h2 class="right-section__header__heading">Today</h2>
+            <p class="right-section__header__text completedTasks_length"><i class="fa-regular fa-square-check"></i>N tasks</p>
+        </header>
+        <h3 class="right-section__heading">My Tasks</h3>
+        <ul class="list right-section__list completedTask__list">
+          <li class="listItem completedTask__listItem">
+            <span>
+                <h4 class="">Task Heading</h4>
+            </span>
+            <span>
+                <buttons class="listItem__btn deleteBtn">Delete</buttons>
+            </span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+main{
+    width:100vw;
+    height: 100vh;
+    font-family: 'Inter','sans-serif';
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.list{
+    list-style: none;
+    margin-left: 0;
+}
+#sideBar{
+    background-color: #e9edc9;
+    width: 18%;
+    height:100%;
+    font-size:2rem;
+}
+.sideBar__heading{
+    font-size: 4rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding:2rem;
+}
+#newTask{
+    color: #198754 ;
+}
+.sideBar__btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 8vh;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    padding-left:2rem;
+    cursor:pointer;
+}
+.sideBar__btn:hover{
+    background-color: #d2d4c94f;
+}
+.selected{
+    background-color: #ccd5ae;
+}
+
+/* Pending Task Started */
+.right-section{
+    width: 82%;
+    font-size: 2rem;
+    padding-left:4rem;
+    padding-top:8rem;
+}
+.right-section__header__heading{
+    font-size: 3rem;
+}
+.right-section__header__text{
+    color: #828776;
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.right-section__heading{
+    width:95%;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+    font-size: 2.6rem;
+    border-bottom: 1px solid #acb890;
+    margin-bottom: 2rem;
+}
+.listItem{
+    width: 95%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom:1rem;
+}
+.listItem span{
+    display: flex;
+    gap:1rem;
+}
+.pendingTask__checkbox{
+    width: 2.5rem;
+}
+.listItem h4{
+    font-weight:400;
+}
+.listItem__btn{
+    border: none;
+    width: 10rem;
+    height: 80%;
+    margin-left: 1rem;
+    border-radius: 5px;
+    padding: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.doneBtn{
+    background-color: #198754;
+}
+.deleteBtn{
+    background-color: red;
+}
+.saveBtn{
+    background-color: dodgerblue;
+}
+
+/* Completed Task Section  */
+.completedTask__checkbox{
+    width: 2.5rem;
+}
+.listItem_creation_input{
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #828776;
+}
