@@ -1,0 +1,112 @@
+*{
+    margin: 0;padding: 0;
+}
+main{
+    width:100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(238, 237, 237, 0.33);
+    background-color: #143642;
+    color: #fff;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+.container{
+    position: relative;
+    width:40vw;
+    height: 80vh;
+    padding:3rem 1rem;
+    background: #5b69b0;
+background: linear-gradient(90deg,rgba(91, 105, 176, 1) 3%, rgba(49, 222, 213, 1) 76%);
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: column;
+    gap:5px;
+    border-radius: 1rem;
+}
+
+#mainIcon{
+    margin-top:2rem;
+    width: 25%;
+}
+.input-group{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    border-radius: 3rem;
+    gap:1rem;
+}
+.input-group input{
+    flex-grow: 1;
+    outline:none;
+    width:70%;
+    height: 100%;
+    border-radius: 3rem;
+    padding:5px;
+    padding-left:1.3rem;
+    font-size:1.3rem;
+    background-color: #FCFCFF;
+    border:0;
+    color: gray;
+}
+.input-group span{
+    padding:5px;
+    width:20%;
+    height:100%;
+    background-color: #FCFCFF;
+    border-radius: 3rem;
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    color: gray;
+    cursor:pointer;
+}
+.input-group span:hover{
+     background-color: #fcfcffa8;
+}
+#err{
+    margin-top: 7px;
+    color: navy;
+    display: none;
+}
+#temp{
+    font-size:4rem;
+    margin: 5px;
+    margin-bottom:0;
+}
+#cityName{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+.row{
+    position: absolute;
+    bottom: 2rem;
+    width: 90%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row .column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    line-height: 1.3;
+    flex-wrap: wrap;
+    min-width: 8rem;
+}
+.row img{
+    width: 25%;
+    filter: invert(1);
+}
+
+

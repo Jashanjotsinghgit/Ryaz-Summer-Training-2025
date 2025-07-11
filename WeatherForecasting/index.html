@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="input-group">
+          <input type="text" placeholder="Check Your's" />
+          <span id="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <p id="error"></p>
+        <img id="mainIcon" src="src/storm.png" alt="" />
+        <p id="temp">23<sup>&deg;</sup>C</p>
+        <p id="cityName">New York</p>
+        <div class="row">
+          <span class="column">
+            <img src="src/humidity.png" alt="" />
+            <span>
+              <p id="wind">Wind</p>
+              <p id="humidity">Humidity</p>
+            </span>
+          </span>
+          <span class="column">
+            <img src="src/cloudy.png" alt="" id="secondaryMainIcon"/>
+            <p id="weather">Partly</p>
+          </span>
+          <span class="column">
+            <img src="src/date-time.png" alt="" />
+            <span>
+              <p id="date">Date</p>
+              <p id="time">Time</p>
+            </span>
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
