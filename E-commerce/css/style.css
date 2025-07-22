@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: aliceblue;
+    font-weight: 300;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+.list a{
+    text-decoration: none;
+}
+.svg{
+    width: 2rem;
+    filter: invert(1);
+}
+/* NavBar Started  */
+nav{
+    width:100%;
+    height:11vh;
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding:0.7rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:2rem;
+    margin-top: -5rem;
+}
+.logo{
+    width:14rem;
+}
+.navbar__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: rgb(74, 74, 74);
+    width: 40%;
+    background-color: aliceblue;
+    height: 90%;
+}
+.input-group input{
+    outline: none;
+    border: none;
+    font: 2rem;
+    width:80%;
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.607);
+    font-weight: 300;
+}
+.input-group img{
+    width: 3rem;
+}
+.navBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    cursor: pointer;
+   border-radius: 12px;
+    transition: background-color 0.3s ease-in;
+}
+.navBtn img{
+    width: 3rem;
+}
+#search2{
+    display: none;
+}
+.collapsible__btn{
+    display: none;
+}
+.hover__content{
+    position: relative;
+}
+.hover__content:hover .arrow{
+    transform: rotate(0deg);
+}
+.hover__content:hover{
+    color: dodgerblue;
+}
+.hover__content__btn .arrow{
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(180deg);
+    width: 2.3rem;
+}
+.hover__content__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginBtn:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+.hover__content__list{
+    display: none;
+    position: absolute;
+    color: black;
+    width: 150%;
+    background-color: white;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    transition: display 0.3s ease-in;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+.hover__content__list li{
+    margin-top: 1rem;
+}
+
+/* Prodcut Categories  */
+.product__categories{
+    width: 98%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background-color: white;
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+}
+.product__smallCard{
+    height: 10rem;
+    padding: 0.5rem;
+}
+.product__smallCard p{
+    margin: 0rem;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+/* Products with Aside Section  */
+.products{
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    width: 98%;
+    height: 55vh;
+    font-size: 1.45rem;
+    font-weight: 400;
+    margin: 0 auto;
+    overflow: scroll;
+}
+.products-aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 98%;
+    height: 55vh;
+    margin-bottom: 1rem;
+}
+.products-aside .products{
+    width: 80%;
+}
+.products-aside aside{
+    background-color: dodgerblue;
+    width: 20%;
+    height: 100%;
+}
+.products-aside aside img{
+    width: 100%;
+    height: 100%;
+}
+.products-part{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.products__block{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+.largeCard{
+    text-align: center;
+    height: 100%;
+    width: 20rem;
+    padding: 1rem;
+    transition: transform 0.3s ease-in;
+}
+.largeCard:hover img{
+    transform: scale(1.05);
+}
+.largeCard img{
+    width: 55%;
+    margin-bottom: 1rem;
+}
+.largeCard .low-scale{
+    max-width: 5.65rem;
+}
+.product__title{
+    font-size: 2rem;
+    font-weight: 300;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.product__price{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1rem;
+}
+#footer{
+    font-size: 2rem;
+    padding: 1rem 3rem;
+}
+.footer__list h6 {
+  font-size: 2rem;
+}
+.footer__list a {
+  text-decoration: none;
+}
+/* Slider Section  */
+.slider{
+    width: 98%;
+    height: 36vh;
+    margin: 0 auto;
+    margin-top: 1rem;
+    position: relative;
+    border:1px solid black;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+}
+.sliderBtn {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin: auto;
+    padding: 0.3rem;
+    width: 5rem;
+    height: 4rem;
+    top: 35%;
+    cursor: pointer;
+    z-index: 2;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index:0;
+    transition: transform 0.3s ease-in;
+}
+.slider .svg{
+    width: 80%;
+}
+.slider .prev-arrow{
+    left: 0px;
+}
+.slider .next-arrow{
+    right: 0px;
+}
+.slide.active{
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+@media screen and (max-width: 1024px){
+    nav{
+        height: auto;
+    }
+   #search1{
+        display: none;
+    }
+    #search2{
+        width:90%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 768px) {
+    .collapsible__btn{
+        display: block;
+        filter: invert(1);
+    }
+    .collapsible__content{
+        display: none;
+    }
+    .collapsible.collapsible--expended .collapsible__content{
+        display: flex;
+        flex-direction: column;
+    }
+    .collapsible.collapsible--expended{
+        flex-direction: column;
+    }
+    .collapsible.collapsible--expended .collapsible__btn{
+        display: none;
+    }
+}
