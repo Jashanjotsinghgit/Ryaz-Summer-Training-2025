@@ -1,21 +1,23 @@
  document.addEventListener('DOMContentLoaded', () => {
             const themeToggleBtn = document.getElementById('theme_toggle_btn');
             const body = document.body; // Select the body element
-            const logo = document.querySelector(".logo")
+            const logo = document.querySelector(".logo");
+            let hero_img = document.querySelector("#heroimg")
             // Function to apply the theme based on a class
             function applyTheme(isDark) {
                 if (isDark) {
                     body.classList.add('dark');
                     themeToggleBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke"></i> '
                     themeToggleBtn.style.color = "white";
-                    logo.style.filter = "invert(1)";
-                    
+                    logo.src = "public/src/main-logo-white.png";
+                    hero_img.src = "public/src/hero-img-dark.jpg";
                     localStorage.setItem('theme', 'dark'); // Save preference
                 } else {
                     body.classList.remove('dark');
                     themeToggleBtn.innerHTML = ' <i class="fa-solid fa-moon"></i>'
                     themeToggleBtn.style.color = "black";
-                    logo.style.filter = "invert(0)";
+                    logo.src = "public/src/main-logo-violet.png";
+                    hero_img.src = "public/src/hero-img.jpg";
                     localStorage.setItem('theme', 'light'); // Save preference
                 }
             }
@@ -110,6 +112,19 @@ function updateIndicators() {
   allIndicators[current].classList.add('active');
 }
 
+//Certificate Sections
+
+let certificates = document.querySelectorAll(".certificate__card");
+
+certificates.forEach(certificate=>{
+  let certificate_downBtn = certificate.querySelector(".downloadBtn");
+  certificate.addEventListener("mouseover",()=>{
+      certificate_downBtn.style.opacity = "1";
+  })
+   certificate.addEventListener("mouseout",()=>{
+      certificate_downBtn.style.opacity = "0";
+  })
+})
 
 // AOS Animation Activator
  AOS.init();

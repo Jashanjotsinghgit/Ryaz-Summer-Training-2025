@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Font Connectivity -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Righteous&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Righteous&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Fontawese Icon Connectivity -->
     <link
@@ -26,8 +29,7 @@
       crossorigin="anonymous"
     />
     <!-- AOS Animation Connectivity  -->
-       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Stylesheet Connectivity -->
     <link rel="stylesheet" href="public/css/normalize.css" />
@@ -38,31 +40,52 @@
 
   <body>
     <!-- Navbar Started -->
-    <header class="nav-header" >
-      <nav class="navbar collapsible"  data-aos="fade-down">
-        <a href="#hero"
-          ><img src="public/src/JASHAN-removebg-preview.png" alt="" class="logo"
+    <header class="nav-header">
+      <nav class="navbar collapsible">
+        <a href=""
+          ><img
+            src="public/src/main-logo-violet.png"
+            alt=""
+            class="logo"
         /></a>
         <ul class="list navbar__list collapsible__content">
-          <li class="navbar__listItem" id="theme_toggle_btn">
-            <i class="fa-solid fa-moon"></i>
+          <li class="navbar__listItem navbar__link" id="theme_toggle_btn">
+            <i class="fa-solid fa-moon "></i>
             <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
           </li>
           <li class="navbar__listItem">
             <a href="#about" class="navbar__link">About</a>
           </li>
+
           <li class="navbar__listItem">
             <a href="#services" class="navbar__link">Services</a>
           </li>
           <li class="navbar__listItem">
-            <a href="https://blogwithjashan.blogspot.com/" class="navbar__link" target="_blank">Blog</a>
+            <a
+              href="https://blogwithjashan.blogspot.com/"
+              class="navbar__link"
+              target="_blank"
+              >Blog</a
+            >
           </li>
           <li class="navbar__listItem">
             <a href="#footer" class="navbar__link">Contact</a>
           </li>
-          <li><a href="#footer"><button class="navbar__button">Get in Touch</button></a></li>
+          <li class="navbar__listItem">
+            <a
+              href="public/src/jashanjot singh resume 01.pdf"
+              class="navbar__link"
+            >
+              Resume <i class="fa-solid fa-download"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#footer"
+              ><button class="navbar__button">Contact</button></a
+            >
+          </li>
         </ul>
-        <span><i class="fa-solid fa-bars"></i></span>
+        <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
       </nav>
     </header>
 
@@ -71,20 +94,19 @@
     <section class="hero" id="hero">
       <div class="hero__container grid grid--1x2">
         <div class="hero__content" data-aos="slide-right">
-          <p class="hero__text">Hey, I'm Jashanjot Singh</p>
-          <h2 class="hero__heading">Designer and Full Stack Developer</h2>
-          <p class="hero__text">I design and code beautifully simple things.</p>
-          <span class="hero__btns">
-            <a href="public/src/jashanjot singh resume 01.pdf"><button class="hero__btn">
-              Resume <i class="fa-solid fa-download"></i>
-            </button></a>
-           <a href="#footer"><button class="hero__btn">
-              Contact Me! <i class="fa-regular fa-id-badge"></i>
-            </button></a> 
-          </span>
+          <p class="hero__text">Hey, I'm Jashanjot Singh;</p>
+          <h2 class="hero__heading">Full Stack Python Developer</h2>
+          <p class="hero__text">
+            I design and code beautifully simple things and I love what I do;
+          </p>
+          <div class="get-in-touch">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
-        <div class="hero__img" data-aos="slide-left">
-          <img src="public/src/dp.png" alt="" />
+        <div class="hero__img" data-aos="slide-left" >
+          <img src="public/src/hero-img.jpg" alt="" id="heroimg">
         </div>
       </div>
     </section>
@@ -92,113 +114,123 @@
     <!-- About Section Started  -->
 
     <section class="about-services" id="about">
-      <div class="ribbon " ></div>
-      <div class="ribbon ribbon2" >Welcome to the Portfolio</div>
+      <!-- <div class="ribbon"></div>
+      <div class="ribbon ribbon2">Welcome to the Portfolio</div> -->
       <section class="about" data-aos="fade-up">
         <div class="about__block">
           <h3 class="about__heading">Introduction</h3>
           <p>
-            Hi, My name is Jashanjot Singh. I'm a Full Stack Developer working
-            in different Technologies and building High End Web Apps.Currently
-            I'm persuing my Engineering in Information Technology at GNDEC,
-            Ludhiana and open to your projects.
+            Hi, my name is Jashanjot Singh. I'm a passionate Full Stack Web
+            Developer specialized in building modern, scalable web applications
+            using Python. I work with diverse technologies to craft high-end
+            digital experiences. Currently, I'm pursuing my Engineering in
+            Information Technology at GNDEC, Ludhiana, and I'm open to exciting
+            freelance or collaborative projects.
           </p>
         </div>
 
         <!-- Services Section Started  -->
-        <section class="services" id="services" data-aos="fade-up">
+        <section class="services" id="services">
           <div class="grid grid--1x3 service__container">
             <div class="services__card">
-              <span class="services__icon"
-                ><i class="fa-solid fa-globe"></i
-              ></span>
-              <h3>Web Designes</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem, ratione! Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Perspiciatis, repellendus?
+              <div class="services__icon">
+                <img src="public/src/frontend-icon.svg" alt="">
+              </div>
+              <h3>Front-End Developer</h3>
+              <p class="services__tagline">
+                I specialize in transforming ideas into visually compelling and
+                high-performance websites. From wireframes to fully functional
+                user interfaces, I ensure pixel-perfect design with modern UI/UX
+                trends.
               </p>
+              <h4>Technologies I Use:</h4>
+              <p>
+                HTML5, CSS3, JavaScript (ES6+),Tailwind CSS, Bootstrap, React.js
+              </p>
+              <h4>Tools I Work With:</h4>
+              <ul class="list">
+                <li>Figma, Canva</li>
+                <li>Vite, Npm</li>
+                <li>Chrome DevTools, Font Awesome</li>
+              </ul>
             </div>
             <div class="services__card">
-              <span class="services__icon"
-                ><i class="fa-solid fa-sliders"></i
-              ></span>
-              <h3>Designer</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem, ratione! Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Perspiciatis, repellendus?
+              <div class="services__icon">
+                <img src="public/src/backend-icon.svg" alt="">
+              </div>
+               <h3>Back-End Developer</h3>
+              <p class="services__tagline">
+               I create robust APIs, manage server-side logic, and ensure smooth communication between frontend and backend. My Python expertise helps in architecting fast and reliable applications.
               </p>
+              <h4>Technologies I Use:</h4>
+              <p>
+                Python, Node.js, Express.js, FastAPI
+              </p>
+              <h4>Tools I Work With:</h4>
+              <ul class="list">
+                <li>Postman(API Testing)</li>
+                <li>Git, GitHub</li>
+              </ul>
             </div>
             <div class="services__card">
-              <span class="services__icon"
-                ><i class="fa-solid fa-laptop-code"></i
-              ></span>
-              <h3>Full Stack Projects</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem, ratione! Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Perspiciatis, repellendus?
+              <div class="services__icon">
+                <img src="public/src/database-icon.svg" alt="">
+              </div>
+               <h3>Database Developer</h3>
+              <p class="services__tagline">
+              I handle both SQL and NoSQL databases to store, query, and manage data with optimal performance, ensuring data integrity and scalability.
               </p>
+              <h4>Databases I Use:</h4>
+              <p>
+                MongoDB, MySQL
+              </p>
+              <h4>Tools I Work With:</h4>
+              <ul class="list">
+                <li>MongoDB Compass </li>
+                <li>MySQL Workbench</li>
+              </ul>
             </div>
           </div>
         </section>
       </section>
     </section>
 
-    <section class="tech-stack" id="techStack" data-aos="fade-up">
-      <h3 class="tech-stack__heading">Technologies I Work With</h3>
-      <div class="tech-stack__container grid grid--1x4">
-        <div class="box--technology">
-          <img src="public/src/html_logo-removebg-preview.png" alt="HTML" />
-        </div>
-        <div class="box--technology">
-          <img src="public/src/css_logo-removebg-preview.png" alt="CSS">
-        </div>
-        <div class="box--technology">
-          <img src="public/src/javascriptlogo-removebg-preview.png" alt="JS">
-        </div>
-        <div class="box--technology">
-          <img src="public/src/bootstrap_logo-removebg-preview.png" alt="BootStrap">
-        </div>
-        <div class="box--technology">
-          <img src="public/src/python_logo-removebg-preview.png" alt="Python">
-        </div>
-        <div class="box--technology">
-          <img src="public/src/php_logo-removebg-preview.png" alt="PHP">
-        </div>
-        <div class="box--technology">
-          <img src="public/src/github_logo-removebg-preview.png" alt="GitHub">
-        </div>
-        <div class="box--technology">
-          <img src="public/src/sqllogo-removebg-preview.png" alt="MySQL">
-        </div>
-        <div class="box--technology">
-          <img src="public/src/canva-removebg-preview.png" alt="Canva">
-        </div>
-      </div>
-    </section>
-    <!-- Projeccts Section Started  -->
-    <section class="projects" data-aos="fade-up">
-      <h2 class="projects__heading">My Recent Projects</h2>
-
+   <!-- Projeccts Section Started  -->
+    <section class="projects" data-aos="fade-up" id="projects">
+      <h2 class="section__heading">My Recent Projects</h2>
+      <p class="section__tagline">Here are a few past projects I've worked on. </p>
       <div class="projects__container">
         <div class="slider projects__block">
-          <div class="grid grid--1x2 slide active ">
+          <div class="grid grid--1x2 slide active">
             <div class="project__block__img" id="project_img1"></div>
             <div class="project__block__content">
               <h3 class="project__block__heading">Moshify Clone</h3>
-              <p class="project__block__text">This project is one of my most recent projects, which I develop in my training hours with Ryaz.io, mostly based on FrontEnd</p>
-              <a href="https://github.com/Jashanjotsinghgit/"><button class="project--btn"> <i class="fab fa-github"></i>GitHub</button></a>
+              <p class="project__block__text">
+                This project is one of my most recent projects, which I develop
+                in my training hours with Ryaz.io, mostly based on FrontEnd
+              </p>
+              <a href="https://github.com/Jashanjotsinghgit/"
+                ><button class="project--btn">
+                  <i class="fab fa-github"></i>GitHub
+                </button></a
+              >
             </div>
           </div>
 
-          <div class="grid grid--1x2 slide ">
+          <div class="grid grid--1x2 slide">
             <div class="project__block__img" id="project_img2"></div>
             <div class="project__block__content">
               <h3 class="project__block__heading">To-do List</h3>
-              <p class="project__block__text">This project is JavaScript based in which user and create, update new tasks and after completion, Task forwards to completed tasks section.</p>
-              <a href="https://github.com/Jashanjotsinghgit/"><button class="project--btn"> <i class="fab fa-github"></i>GitHub</button></a>
+              <p class="project__block__text">
+                This project is JavaScript based in which user and create,
+                update new tasks and after completion, Task forwards to
+                completed tasks section.
+              </p>
+              <a href="https://github.com/Jashanjotsinghgit/"
+                ><button class="project--btn">
+                  <i class="fab fa-github"></i>GitHub
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -212,11 +244,73 @@
       </div>
     </section>
 
+   <!-- Certificate Section Started  -->
+    <section class="certificates" id="certificates">
+      <h2 class="section__heading">Licenses and Certifications</h2>
+      <p class="section__tagline">Here are a few past Certificate I've Earned. </p>
+      <div class="grid grid--1x3 certificates__container">
+
+          <div class="certificate__card">
+            <img src="public/src/AE_Logo_Black.svg" alt="">
+            <h3>Alert Enterprise Trainee</h3>
+            <p>Completed one month internship at Alert enterprise, IT Park, Chandigarh</p>
+            <a href="public/src/AE.jpg" class="downloadBtn"> <i class="fa-solid fa-download"></i></a>
+          </div>
+
+          <div class="certificate__card">
+            <img src="public/src/nptel-logo.png" alt="" >
+            <h3>C Programming</h3>
+            <p>Certificate by IIT, Kharagpur</p>
+            <a href="public/src/NPTEL-Certificate.pdf" class="downloadBtn"> <i class="fa-solid fa-download"></i></a>
+          </div>
+
+          <div class="certificate__card">
+            <img src="public/src/infosys-logo.png" alt="">
+            <h3>Python</h3>
+            <p>Certification by Infosys Springboard Platform</p>
+            <a href="public/src/Infosys-python.pdf" class="downloadBtn"> <i class="fa-solid fa-download"></i></a>
+          </div>
+
+          <div class="certificate__card">
+            <img src="public/src/canva-logo.svg" alt="">
+            <h3>Canva for beginners</h3>
+            <p>Certificate by Simplilearn</p>
+            <a href="public/src/Canva_Certificate.pdf" class="downloadBtn"> <i class="fa-solid fa-download"></i></a>
+          </div>
+
+          <div class="certificate__card">
+            <img src="public/src/sih-logo.png" alt="">
+            <h3>SIH 2024</h3>
+            <p>Certificate of Participation in National level Hackathon</p>
+            <a href="public/src/sih_certificate.pdf" class="downloadBtn"> <i class="fa-solid fa-download"></i></a>
+          </div>
+
+          <div class="certificate__card">
+            <img src="public/src/sololearn.webp" alt="">
+            <h3>Intro to JavaScript</h3>
+            <p>Certificate by SoloLearn, an open source learing platform</p>
+            <a href="public/src/Intro to JavaScript Certificate.pdf" class="downloadBtn"> <i class="fa-solid fa-download"></i></a>
+          </div>
+      </div>
+    </section>
     <!-- Footer Started  -->
-
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted " id="footer" data-aos="fade-up">
+    <footer
+      class="text-center text-lg-start bg-body-tertiary text-muted"
+      id="footer"
+      data-aos="fade-up"
+    >
       <!-- Section: Social media -->
-
+      <section class="callout">
+        <h2>Start a project</h2>
+        <p>
+          Interested in working together? We should queue up a time to chat.
+        </p>
+        <div>
+          <a href="mailto: jashanjotx@gmail.com"
+            ><button class="main__btn">let's do it</button></a
+          >
+        </div>
+      </section>
       <!-- Section: Links  -->
       <section class="">
         <div class="container text-center text-md-start mt-5">
@@ -225,7 +319,11 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <img src="public/src/JASHAN-removebg-preview.png" alt="" class="logo" />
+              <img
+                src="public/src/main-logo-white.png"
+                alt=""
+                class="logo"
+              />
               <p>Jashanjot Singh</p>
             </div>
             <!-- Grid column -->
@@ -260,10 +358,10 @@
                 <a href="#about" class="text-reset">About</a>
               </p>
               <p>
-                <a href="#services" class="text-reset">Services</a>
+                <a href="#projects" class="text-reset">Projects</a>
               </p>
               <p>
-                <a href="#techStack" class="text-reset">Tech Stack</a>
+                <a href="#certificates" class="text-reset">Certifications</a>
               </p>
             </div>
             <!-- Grid column -->
